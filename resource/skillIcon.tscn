@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bie4a67ftaofg"]
+
+[ext_resource type="Script" path="res://resource/skillIcon.gd" id="1_86xgk"]
+[ext_resource type="Texture2D" uid="uid://cmrsdewi6sxj5" path="res://icon.svg" id="1_wilal"]
+
+[node name="skillIcon" type="TextureRect" node_paths=PackedStringArray("skillNameLabel")]
+custom_minimum_size = Vector2(50, 50)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_wilal")
+expand_mode = 1
+script = ExtResource("1_86xgk")
+skillNameLabel = NodePath("SkillName")
+
+[node name="SkillName" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -46.0
+offset_top = -25.0
+offset_right = 47.0
+offset_bottom = -2.0
+grow_horizontal = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

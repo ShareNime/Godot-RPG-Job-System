@@ -1,0 +1,35 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://f2vhvd4qt62w"]
+
+[ext_resource type="Texture2D" uid="uid://ceg4orqc0dvex" path="res://resource/sprite/swordman-test.png" id="1_0dr0o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r78lr"]
+atlas = ExtResource("1_0dr0o")
+region = Rect2(64, 0, 64, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77sto"]
+atlas = ExtResource("1_0dr0o")
+region = Rect2(0, 0, 64, 110)
+
+[resource]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r78lr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77sto")
+}],
+"loop": true,
+"name": &"sit",
+"speed": 5.0
+}]

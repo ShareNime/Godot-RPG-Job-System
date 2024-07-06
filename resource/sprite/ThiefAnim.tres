@@ -1,0 +1,35 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://o2xpn0pitsho"]
+
+[ext_resource type="Texture2D" uid="uid://po1ujj101jwi" path="res://resource/sprite/thief-test.png" id="1_k4dm1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qb1t"]
+atlas = ExtResource("1_k4dm1")
+region = Rect2(64, 0, 64, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrbxh"]
+atlas = ExtResource("1_k4dm1")
+region = Rect2(0, 0, 64, 110)
+
+[resource]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qb1t")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrbxh")
+}],
+"loop": true,
+"name": &"sit",
+"speed": 5.0
+}]

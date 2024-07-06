@@ -1,0 +1,15 @@
+AudioStreamPlayer2D
+Sprite2D
+Label
+AnimatedSprite2D
+Control
+BoxContainer
+HBoxContainer
+Button
+Panel
+MarginContainer
+HScrollBar
+ScrollContainer
+TextureRect
+GridContainer
+VBoxContainer

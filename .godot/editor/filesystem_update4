@@ -1,0 +1,7 @@
+res://resource/test_csv.tscn
+res://resource/sprite/MageAnim.tres
+res://resource/class_card_scene.tscn
+res://resource/skillIcon.tscn
+res://csvTest.gd
+res://resource/class_card.gd
+res://resource/skillIcon.gd
